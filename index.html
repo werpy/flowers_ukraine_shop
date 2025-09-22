@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers | Shop</title>
+    <!-- Header icon -->
+    <link rel="shortcut icon" href="/src/img/flowers_logo_icon.svg">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Box icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Styles connecting -->
     <link rel="stylesheet" href="/dist/css/style.css">
-    <link rel="shortcut icon" href="/src/img/icons/flower_logo.png">
 </head>
+
 <body>
-    
+    <div class="header_navigation">
+            <div class="header__navigation_wrapper">
+                <a href="#" class="header__navigation">Валюта</a>
+                <select name="select" id="" class="header_select">
+                    <option class="header_select_option" value="value_grn">Грн</option>
+                    <option class="header_select_option" value="value_usd">Usd</option>
+                    <option class="header_select_option" value="value_eur">Eur</option>
+                </select>
+            </div>
+            <div class="header__navigation_wrapper">
+                <a href="#" class="header__navigation">Мова</a>
+                <select name="select" id="" class="header_select">
+                    <option class="header_select_option" value="value_ua_languege">UA</option>
+                    <option class="header_select_option" value="value_en_languege">ENG</option>
+                </select>
+            </div>
+            <div class="header__navigation_wrapper">
+                <a href="#" class="header__navigation">Місто</a>
+                <select name="select" id="" class="header_select">
+                    <option class="header_select_option" value="value_kyiv">Київ</option>
+                    <option class="header_select_option" value="value_boryspil">Бориспіль</option>
+                    <option class="header_select_option" value="value_vyshneve">Вишневе</option>
+                    <option class="header_select_option" value="value_brovary">Бровари</option>
+                    <option class="header_select_option" value="value_irpin">Ірпінь</option>
+                </select>
+            </div>
+            <a href="#" class="header__navigation"><box-icon class="header_icon" name='heart'></box-icon>Закладки</a>
+            <a href="#" class="header__navigation"><img src="src/img/header_images/truck_icon.svg" class="header_icon" name='truck' type='solid'></img>Доставка та оплата</a>
+            <a href="#" class="header__navigation"><box-icon class="header_icon" name='phone'></box-icon>Контакти</a>
+            
+            <div class="header_reg_block">
+                <a class="header_reg_btn" href="#"><box-icon class="header_icon sign_up_icon" name='user'></box-icon>Вхід</a>
+                <div class="header_reg_block_divider"></div>
+                <a class="header_reg_btn" href="#">Регістрація</a>
+            </div>
+        </div>
+    <header class="header">
+        
+    </header>
 </body>
+
 </html>
