@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers | Shop</title>
     <!-- Header icon -->
-    <link rel="shortcut icon" href="/src/img/flowers_logo_icon.svg">
+    <link rel="shortcut icon" href="src/img/flowers_logo_icon.svg">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,49 +14,128 @@
     <!-- Box icons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- Styles connecting -->
-    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 <body>
+    <!-- Header Navigation -->
     <div class="header_navigation">
-            <div class="header__navigation_wrapper">
-                <a href="#" class="header__navigation">Валюта</a>
-                <select name="select" id="" class="header_select">
-                    <option class="header_select_option" value="value_grn">Грн</option>
-                    <option class="header_select_option" value="value_usd">Usd</option>
-                    <option class="header_select_option" value="value_eur">Eur</option>
-                </select>
-            </div>
-            <div class="header__navigation_wrapper">
-                <a href="#" class="header__navigation">Мова</a>
-                <select name="select" id="" class="header_select">
-                    <option class="header_select_option" value="value_ua_languege">UA</option>
-                    <option class="header_select_option" value="value_en_languege">ENG</option>
-                </select>
-            </div>
-            <div class="header__navigation_wrapper">
-                <a href="#" class="header__navigation">Місто</a>
-                <select name="select" id="" class="header_select">
-                    <option class="header_select_option" value="value_kyiv">Київ</option>
-                    <option class="header_select_option" value="value_boryspil">Бориспіль</option>
-                    <option class="header_select_option" value="value_vyshneve">Вишневе</option>
-                    <option class="header_select_option" value="value_brovary">Бровари</option>
-                    <option class="header_select_option" value="value_irpin">Ірпінь</option>
-                </select>
-            </div>
-            <a href="#" class="header__navigation"><box-icon class="header_icon" name='heart'></box-icon>Закладки</a>
-            <a href="#" class="header__navigation"><img src="src/img/header_images/truck_icon.svg" class="header_icon" name='truck' type='solid'></img>Доставка та оплата</a>
-            <a href="#" class="header__navigation"><box-icon class="header_icon" name='phone'></box-icon>Контакти</a>
-            
-            <div class="header_reg_block">
-                <a class="header_reg_btn" href="#"><box-icon class="header_icon sign_up_icon" name='user'></box-icon>Вхід</a>
-                <div class="header_reg_block_divider"></div>
-                <a class="header_reg_btn" href="#">Регістрація</a>
-            </div>
-            
+        <div class="header__navigation_wrapper">
+            <a href="#" class="header__navigation">Валюта</a>
+            <select name="select" id="" class="header_select">
+                <option class="header_select_option" value="value_grn">Грн</option>
+                <option class="header_select_option" value="value_usd">Usd</option>
+                <option class="header_select_option" value="value_eur">Eur</option>
+            </select>
         </div>
+        <div class="header__navigation_wrapper">
+            <a href="#" class="header__navigation">Мова</a>
+            <select name="select" id="" class="header_select">
+                <option class="header_select_option" value="value_ua_languege">UA</option>
+                <option class="header_select_option" value="value_en_languege">ENG</option>
+            </select>
+        </div>
+        <div class="header__navigation_wrapper">
+            <a href="#" class="header__navigation">Місто</a>
+            <select name="select" id="" class="header_select">
+                <option class="header_select_option" value="value_kyiv">Київ</option>
+                <option class="header_select_option" value="value_boryspil">Бориспіль</option>
+                <option class="header_select_option" value="value_vyshneve">Вишневе</option>
+                <option class="header_select_option" value="value_brovary">Бровари</option>
+                <option class="header_select_option" value="value_irpin">Ірпінь</option>
+            </select>
+        </div>
+        <a href="#" class="header__navigation"><box-icon class="header_icon" name='heart'></box-icon>Закладки</a>
+        <a href="#" class="header__navigation"><img src="src/img/header_images/truck_icon.svg" class="header_icon"
+                name='truck' type='solid'></img>Доставка та оплата</a>
+        <a href="#" class="header__navigation"><box-icon class="header_icon" name='phone'></box-icon>Контакти</a>
+
+        <div class="header_reg_block">
+            <a class="header_reg_btn" href="#"><box-icon class="header_icon sign_up_icon"
+                    name='user'></box-icon>Вхід</a>
+            <div class="header_reg_block_divider"></div>
+            <a class="header_reg_btn" href="#">Регістрація</a>
+        </div>
+
+    </div>
+    <!-- Header -->
     <header class="header">
-        
+        <div class="header_divider">
+            <div class="logo_img_block">
+                <img class="header_logo" src="src/img/flowers_logo_icon.svg" alt="logo icon">
+            </div>
+            <!-- Nav Search Bar Wrapper -->
+            <div class="nav_search_bar_wrapper">
+                <select name="header_select" id="" class="header_nav_select">
+                    <option value="search_above_categories" class="header_select_option">Пошук по категоріям</option>
+                    <option value="bouquets" class="header_select_option">Букети</option>
+                    <option value="flowers_in_box" class="header_select_option">Квіти в коробці</option>
+                    <option value="compositions" class="header_select_option">Композиції</option>
+                    <option value="gifts" class="header_select_option">Подарунки</option>
+                    <option value="bucket_gifts" class="header_select_option">Подарункові корзини</option>
+                    <option value="bride's_bouquets" class="header_select_option">Букети нареченої</option>
+                    <option value="delicious_bouquets" class="header_select_option">Смачні букети</option>
+                </select>
+                <div class="header_goods_search_block">
+                    <input class="header_goods_input" type="search" placeholder="Пошук товарів">
+                    <box-icon class="header_search_icon" name='search'></box-icon>
+                </div>
+                <!-- Header Goods Catalog Block -->
+                <div class="header_goods_catalog_block">
+                    <select class="header_goods_catalog_select" name="goods_catalog">
+                        <option class="goods_catalog_option" value="white_roses">Каталог товарів</option>
+                        <option class="goods_catalog_option" value="white_roses">Білі рози</option>
+                        <option class="goods_catalog_option" value="creamy_roses">Кремові рози</option>
+                        <option class="goods_catalog_option" value="blue_roses">Голубі/сині рози</option>
+                        <option class="goods_catalog_option" value="dutch_roses">Голандські рози</option>
+                        <option class="goods_catalog_option" value="red_roses">Червоні рози</option>
+                        <option class="goods_catalog_option" value="orange_roses">Помаранчеві рози</option>
+                        <option class="goods_catalog_option" value="bush_rose">Кущова роза</option>
+                        <option class="goods_catalog_option" value="one_meter_rose">Метрові рози</option>
+                        <option class="goods_catalog_option" value="pink_roses">Рожеві рози</option>
+                        <option class="goods_catalog_option" value="yellow_roses">Жовті рози</option>
+                        <option class="goods_catalog_option" value="black_roses">Чорні рози</option>
+                        <option class="goods_catalog_option" value="peony_roses">Піоновидні рози</option>
+                        <option class="goods_catalog_option" value="eleven_roses">11 роз</option>
+                        <option class="goods_catalog_option" value="nineteen_roses">19 роз</option>
+                        <option class="goods_catalog_option" value="twenty_five_roses">25 роз</option>
+                        <option class="goods_catalog_option" value="fifty_one_roses">51 роза</option>
+                    </select>
+                    <a href="#" class="header_nav_link">Форум</a>
+                    <a href="#" class="header_nav_link">Відгуки</a>
+                    <a href="#" class="header_nav_link">Акції</a>
+                    <a href="#" class="header_nav_link">Відгуки</a>
+                    <a href="#" class="header_nav_link">Новини</a>
+                    <select class="header_info_select" name="header_info_select" id="#">
+                        <option value="information" class="header_info_select_option">Інформація</option>
+                        <option value="pay_and_delivery" class="header_info_select_option">Оплата та доставка</option>
+                        <option value="corporate_clients" class="header_info_select_option">Корперативним клієнтам
+                        </option>
+                        <option value="contacts" class="header_info_select_option">Контакти</option>
+                    </select>
+                </div>            
+            </div>
+            <!-- Social Info Wrapper -->
+            <div class="social_info_wrapper">
+                <div class="social_block">
+                    <div class="social_block_icon">
+                        <box-icon class="social_block_img" name='instagram' type='logo'></box-icon>
+                    </div>
+                    <div class="social_block_icon">
+                        <box-icon class="social_block_img" name='telegram' type='logo'></box-icon>
+                    </div>
+                    <div class="social_block_icon">
+                        <box-icon class="social_block_img" name='facebook' type='logo'></box-icon>
+                    </div>
+                </div>
+                <a class="contact_phone" href="tel:+380678293030">+38(067) 829 30 30</a>
+                <div class="client_nav_block">
+                    <box-icon class="client_nav_icon" name='heart'></box-icon>
+                    <box-icon class="client_nav_icon" name='cart'></box-icon>
+                    <span class="cart_summary">₴ 1 520</span>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 
